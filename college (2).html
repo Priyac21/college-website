@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>M. Kumarasamy College of Engineering</title>
+<style>
+    .block {
+        height:100px;
+        width:100%;
+        margin: auto;
+        text-align: center;
+    }
+    .iconimg {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  float:right;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.tabledata {
+    font-size:20px;
+}
+td {
+    border: 1px solid #030303;
+}
+</style>
+<script>
+    function show(block){
+        if(block == "About") {
+            document.getElementById("home").style.display="none"
+            document.getElementById("about").style.display="inline-block"
+            document.getElementById("admissions").style.display="none"
+            document.getElementById("departments").style.display="none"
+            document.getElementById("placements").style.display="none"
+
+            document.getElementById("aboutb").style.background="grey"
+            document.getElementById("admissionsb").style.background="rgb(224, 222, 222)"
+            document.getElementById("departmentsb").style.background="rgb(224, 222, 222)"
+            document.getElementById("homeb").style.background="rgb(224, 222, 222)"
+            document.getElementById("placementsb").style.background="rgb(224, 222, 222)"
+        } else if(block == "Admissions") {
+            document.getElementById("home").style.display="none"
+            document.getElementById("about").style.display="none"
+            document.getElementById("admissions").style.display="inline-block"
+            document.getElementById("departments").style.display="none"
+            document.getElementById("placements").style.display="none"
+
+            document.getElementById("admissionsb").style.background="grey"
+            document.getElementById("aboutb").style.background="rgb(224, 222, 222)"
+            document.getElementById("departmentsb").style.background="rgb(224, 222, 222)"
+            document.getElementById("homeb").style.background="rgb(224, 222, 222)"
+            document.getElementById("placementsb").style.background="rgb(224, 222, 222)"
+        } else if(block == "Departments") {
+            
+            document.getElementById("home").style.display="none"
+            document.getElementById("about").style.display="none"
+            document.getElementById("admissions").style.display="none"
+            document.getElementById("departments").style.display="inline-block"
+            document.getElementById("placements").style.display="none"
+
+            document.getElementById("departmentsb").style.background="grey"
+            document.getElementById("aboutb").style.background="rgb(224, 222, 222)"
+            document.getElementById("admissionsb").style.background="rgb(224, 222, 222)"
+            document.getElementById("homeb").style.background="rgb(224, 222, 222)"
+            document.getElementById("placementsb").style.background="rgb(224, 222, 222)"
+        } else if(block == "Placements") {
+            document.getElementById("home").style.display="none"
+            document.getElementById("about").style.display="none"
+            document.getElementById("admissions").style.display="none"
+            document.getElementById("departments").style.display="none"
+            document.getElementById("placements").style.display="inline-block"
+
+            document.getElementById("placementsb").style.background="grey"
+            document.getElementById("aboutb").style.background="rgb(224, 222, 222)"
+            document.getElementById("admissionsb").style.background="rgb(224, 222, 222)"
+            document.getElementById("departmentsb").style.background="rgb(224, 222, 222)"
+            document.getElementById("homeb").style.background="rgb(224, 222, 222)"
+        } else {
+            
+            document.getElementById("home").style.display="inline-block"
+            document.getElementById("about").style.display="none"
+            document.getElementById("admissions").style.display="none"
+            document.getElementById("departments").style.display="none"
+            document.getElementById("placements").style.display="none"
+
+            document.getElementById("homeb").style.background="grey"
+            document.getElementById("aboutb").style.background="rgb(224, 222, 222)"
+            document.getElementById("admissionsb").style.background="rgb(224, 222, 222)"
+            document.getElementById("departmentsb").style.background="rgb(224, 222, 222)"
+            document.getElementById("placementsb").style.background="rgb(224, 222, 222)"
+
+        }
+    }
+</script>
+</head>
+<body onload="show('home')">
+<div style="height: 100%;">
+    <div style="display: table;text-align:center; height:20%">
+        <div style="display:inline-block; width:30%">
+            <a href="https://www.mkce.ac.in/" style="height:auto; width:auto">
+                <img style="height:auto; width:300px" src="https://www.mkce.ac.in/image/logo.png"/>
+            </a>
+        </div>
+        <div style="display:inline-block;width:70%">
+            <div class="iconimg">
+                <img style="height:auto; width:100px" src="https://www.mkce.ac.in/image/logo/naac.png"/>
+                <img style="height:auto; width:100px" src="https://www.mkce.ac.in/image/logo/nba.png"/>
+                <img style="height:auto; width:200px" src="https://www.mkce.ac.in/image/logo/iso.png"/>
+                <img style="height:auto; width:100px" src="https://www.mkce.ac.in/image/logo/20%20years.png"/>
+                <img style="height:auto; width:100px" src="https://www.mkce.ac.in/image/gauge-2.png"/>
+                <img style="height:auto; width:100px" src="https://www.mkce.ac.in/image/gauge-1.png"/>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: rgb(224, 222, 222);display: table;height:80%; width: 100%;">
+        <div style="width:20%; display: inline-block;vertical-align: top;">
+            <div id="aboutb" onclick="show('About')" class="block">About</div>
+            <div id="admissionsb" onclick="show('Admissions')" class="block">Admissions</div>
+            <div id="departmentsb" onclick="show('Departments')" class="block">Departments</div>
+            <div id="placementsb" onclick="show('Placements')" class="block">Placements</div>
+            <div id="homeb" onclick="show('Home')" class="block">Home</div>
+        </div>
+        <div id="home" style="height:100%; width:80%;display: inline-block">
+            <img style="width: 100%; height: 100%;" src="C:\Users\Priyanka\Downloads\mkce1.webp">
+        </div>
+        <div id="about" style="width:80%;display: inline-block">
+           <div style="background:grey; font-size:20px"> *** Vision ***</div>
+           <p style="font-size:20px">To emerge as a leader among the top institutions in the field of technical education.</p>
+            <div style="background:grey; font-size:20px"> *** Mission ***</div> 
+            <p style="font-size:20px">Produce smart technocrats with empirical knowledge who can surmount the global challenges.</p>
+            <p style="font-size:20px">Create a diverse, fully-engaged, learner-centric campus environment to provide quality education to the students.</p>
+            <p style="font-size:20px">Maintain mutually beneficial partnerships with our alumni, industry and professional associations.</p>
+            <div style="background:grey; font-size:20px"> *** Quality Policy ***</div>
+            <p style="font-size:20px">We, at M/s. M.Kumarasamy College of Engineering are committed to the Society in making our Students to live a purpose as responsible citizens with Ethical Values through provision of Quality Technical Education and continually improve to become a World Class Technological University.</p>
+        </div>
+        <div id="admissions" style="width:80%;display: inline-block">
+            <p style="font-size:20px">Scholarship Details:</p>
+            <p style="font-size:20px">*** Government scholarship details ***</p>
+            <p style="font-size:20px"> * First Graduate * </p>
+            <p style="font-size:20px">First Graduate certificate is provided to educate children from uneducated families so that the children and their families are guaranteed a bright future. In addition to this, the certificate reaches the underprivileged students who could not pursue higher education due to low financial status.</p>
+            <p style="font-size:20px"> * Eligibility * </p>
+            <p style="font-size:20px">The applicant should be a resident of Tamil Nadu. No other family members should have graduated. Siblings should not have received this certificate.</p>
+        </div>
+        <div id="departments" style="width:80%;display: inline-block">
+            <p style="font-size:20px"> *** Department Details ***</p>
+            <p style="font-size:20px">B.Tech - ARTIFICIAL INTELLIGENCE AND DATA SCIENCE - 60</p>
+            <p style="font-size:20px">B.Tech - ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING - 60</p>
+            <p style="font-size:20px">B.E – CIVIL ENGINEERING - 60</p>
+            <p style="font-size:20px">B.Tech - COMPUTER SCIENCE AND BUSINESS SYSTEMS - 60</p>
+            <p style="font-size:20px">B.E – COMPUTER SCIENCE AND ENGINEERING - 120</p>
+            <p style="font-size:20px">B.E - ELECTRICAL AND ELECTRONICS ENGINEERING - 120</p>
+            <p style="font-size:20px">B.E – ELECTRONICS AND COMMUNICATION ENGINEERING - 240</p>
+            <p style="font-size:20px">B.Tech – INFORMATION TECHNOLOGY - 120</p>
+            <p style="font-size:20px">B.E - MECHANICAL ENGINEERING - 120</p>
+        </div>
+        <div id="placements" style="width:80%;display: inline-block">
+            <table style="width: 100%;border-collapse: collapse;">
+                <tr>
+                <td></td>
+                <td class="tabledata" style="text-align: center"> *** Placement Details ***</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>1</td>
+                <td class="tabledata">TCS</td>
+                <td>108</td>
+                </tr>
+                <tr>
+                <td>2</td>
+                <td class="tabledata">COGNIZANT</td>
+                <td>124</td>
+                </tr>
+                <tr>
+                <td>3</td>
+                <td class="tabledata">WIPRO</td>
+                <td>84</td>
+                </tr>
+                <tr>
+                <td>4</td>
+                <td class="tabledata">ASPIRE SYSTEMS</td>
+                <td>16</td>
+                </tr>
+                <tr>
+                <td>5</td>
+                <td class="tabledata">ACCENTURE</td>
+                <td>21</td>
+                </tr>
+                <tr>
+                <td>6</td>
+                <td class="tabledata">INFOSYS</td>
+                <td>44</td>
+                </tr>
+                <tr>
+                <td>7</td>
+                <td class="tabledata">PURPLESLATE</td>
+                <td>4</td>
+                </tr>
+                <tr>
+                <td>8</td>
+                <td class="tabledata">VURAM TECHNOLOGIES</td>
+                <td>4</td>
+                </tr>
+                <tr>
+                <td>9</td>
+                <td class="tabledata">KAAR TECHNOLOGIES</td>
+                <td>4</td>
+                </tr>
+                <tr>
+                <td>10</td>
+                <td class="tabledata">HEXAWARE TECHNOLOGIES</td>
+                <td>5</td>
+                </tr>
+                </table>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
